@@ -3,8 +3,8 @@
 @layer base {
   :root {
     --font-var-settings-headings: "wght" 700, "opsz" 9;
-    --color-primary: 243 76 24;
-    --color-secondary: 250 195 12;
+    --color-primary: 20 189 200;
+    --color-secondary: 209 207 207;
     --color-accent: 52 62 112;
     --color-warning: 202 121 45;
     --color-danger: 180 25 14;
@@ -36,8 +36,8 @@
   }
 
   [data-theme="dark"] {
-    --color-primary: 243 76 24;
-    --color-secondary: 250 195 12;
+    --color-primary: 20 189 200;
+    --color-secondary: 127 210 246;
     --color-accent: 52 62 112;
     --color-warning: 202 121 45;
     --color-danger: 180 25 14;
@@ -46,6 +46,7 @@
     --color-light: 255 255 255;
     --color-info: 25 28 38;
   }
+  
 }
 html {
   font-size: 18px;

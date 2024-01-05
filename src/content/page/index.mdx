@@ -33,16 +33,15 @@ hero:
     container: xl
     surface: surface-dark
   title: |
-    Proximamente, **Producto** landing page para nuevo producto
+    Administra precios, chatea y cotiza fácilmente con click**mi**
   intro: >
-    Elevate your business with plain funnel building magic. Start creating your
-    blazing fast Astro sales funnel for saas, product, service or app.
+    Centraliza precios, comunica fácil con clientes y cotiza en una app completa. Simplifica tu gestión y potencia tu negocio ahora.
   buttons:
     - icon_only: false
-      label: Learn more
+      label: Conoceme
       href: "#more"
     - icon_only: false
-      label: Contact Us
+      label: Contactanos
       color: surface-transparent
       href: "#contact"
 blocks:
@@ -53,142 +52,148 @@ blocks:
       block_class: py-20
     features:
       - content: >
-          Transform your template's appearance with the beloved Tailwind CSS
-          framework. Easily customize your design, bringing your unique vision
-          to life.
+          Permite a los usuarios crear propuestas impactantes en tiempo récord,
+          lo que agiliza el proceso de presentación de propuestas a clientes potenciales.
         icon: /src/icons/tailwind.svg
         color: surface-secondary
-        title: Tailwind CSS
+        title: Eficiencia en la Creación de Propuestas Comerciales.
       - icon: /src/icons/phone.svg
         content: >
-          Our form supports topics, enabling submissions to go directly to Slack
-          or services like SendGrid/Postmark. You can assign different email
-          addresses or Slack channels to specific topics.
+          La automatización de propuestas inteligentes permite optimizar la generación 
+          de propuestas y personalizarlas según las necesidades y preferencias del cliente.
         color: surface-secondary
         href: ""
-        title: Contact Form
+        title: Inteligencia Artificial y Automatización.
       - color: surface-secondary
         icon: /src/icons/email.svg
         content: >
-          Our Mailchimp integration empowers you to effortlessly create multiple
-          forms with robust tag and list support. Customize your interactions,
-          streamline data organization, and enhance your marketing strategy
-          seamlessly.
-        title: Newsletters
+          Una de las características distintivas de ClickMi es su capacidad para prever 
+          el verdadero interés de compra del cliente.
+        title: Predicción del Interés de Compra.
       - icon: /src/icons/blocks-group-solid.svg
         content: >
-          Craft your perfect page effortlessly with our selection of versatile
-          blocks. Customize and extend your page exactly the way you want it.
+          Diseñado con una interfaz fácil de usar, ClickMi facilita la navegación y la utilización 
+          del motor de automatización incluso para aquellos usuarios con poca experiencia en tecnología.
         color: surface-secondary
         href: ""
-        title: Page Block Builder
+        title: Interfaz Intuitiva y Amigable.
       - href: "#"
         icon: /src/icons/git.svg
         content: >
-          With Astro + Static CMS, your content finds its home in a Git
-          repository, ensuring efficient content management and collaboration.
+          ClickMi se integra de manera fluida con otras plataformas y sistemas existentes, 
+          permitiendo una adopción sencilla en entornos comerciales ya establecidos.
         color: surface-secondary
-        title: Git-Based
+        title: Integración con Plataformas Existentes.
       - content: >
-          Give your visitors the freedom to choose their preferred color scheme,
-          ensuring a personalized browsing experience.
+         ClickMi ofrece herramientas de análisis que permiten evaluar el rendimiento de las propuestas generadas.
         color: surface-secondary
-        icon: /src/icons/dark-theme-20-filled.svg
-        title: Light & Darkmode
+        icon: /src/icons/Analisis.svg
+        title: Análisis de Resultados y Retroalimentación.
     content: |+
-      ## StarFunnel Features
+      ## Caracteristicas Clickmi
 
 
 
 
+     
   - type: text_media
     component: TextMedia
     style:
-      container: md
-      template: column
-      reverse: true
-      animate: false
-      block_class: ""
-      image_opacity: ""
-    media:
-      image_size: "66"
-      thumbnail: /src/assets/ImageInitialVideo.jpg
-      title: Image
-      embed: youtube
-      image_opacity: ""
-    content: >-
-      ## **A green page speed score** Optimized Speed and Accessibility
-
-
-      Achieving a in the high 90 page speed score and adhering to WCAG 2.1 AA standards, we demonstrate our unwavering commitment. Our dedication to optimizing speed and ensuring accessibility guarantees a superior user experience for all.
-  - type: text_media
-    component: TextMedia
-    style:
-      container: lg
-      template: column
+      container: none
       reverse: false
       animate: false
-      block_class: pb-14
+      block_class: text-center pb-16 font-semibold	
       image_opacity: ""
     media:
       image_size: "66"
       title: Image
       aspect: 1.777
-      thumbnail: /src/assets/ImageInitialVideo.jpg
-      video_preview: /video/hamster_coder.mp4
+      thumbnail: ""
       embed: youtube
-      video_id: dsTXcSeAZq8
       image_opacity: ""
     content: >
-      ## **Secure by design** Static sites are not only fast but also inherently
-      secure
+      *Estas características combinadas hacen de ClickMi una herramienta potente y versátil para la creación de propuestas comerciales, aprovechando la automatización y la inteligencia artificial para ofrecer resultados efectivos y centrados en el cliente.*
 
-
-      By eliminating databases and server-side code, static sites become less prone to attacks. Embrace the robust security of static architecture for a safer online presence.
-  - type: text_media
-    component: TextMedia
+  - type: pricing
+    component: PricingTable
+    title: Precios
     style:
       container: lg
-      template: column
-      reverse: true
-      animate: false
-      block_class: pb-14
-      image_opacity: ""
-    media:
-      image_size: "50"
-      title: Image
-      aspect: 1.777
-      thumbnail: /src/assets/ImageInitialVideo.jpg
-      embed: youtube
-      image_opacity: ""
-    content: >
-      ## **Page speed = conversion** Speed Up Conversions & Hoard Leads with
-      Ease!
+    prices:
+      - title: Free
+        intro: Host it yourself
+        price: $0,-
+        features:
+          - label: Free for commercial use
+            icon: /src/icons/check-o.svg
+            icon_class: text-success
+          - label: Basic support
+            icon: /src/icons/check-o.svg
+            value: GitHub
+            icon_class: text-success
+          - label: Remove attribution
+            icon: /src/icons/close-o.svg
+            icon_class: text-danger
+          - label: Premium Support
+            icon: /src/icons/close-o.svg
+            icon_class: text-danger
+        surface: surface-secondary
+        buttons:
+          - icon_only: false
+            label: Get started
+            href: https://github.com/unfolding-io/StarFunnel
+            color: surface-secondary
+      - title: No attribution
+        intro: Host it yourself
+        price: $149.95
+        features:
+          - label: Free for commercial use
+            icon: /src/icons/check-o.svg
+            icon_class: text-success
+          - label: Basic support
+            icon: /src/icons/check-o.svg
+            value: GitHub
+            icon_class: text-success
+          - label: Remove attribution
+            icon: /src/icons/check-o.svg
+            icon_class: text-success
+          - label: Premium Support
+            icon: /src/icons/close-o.svg
+            icon_class: text-danger
+        surface: surface-primary
+        buttons:
+          - icon_only: false
+            label: Buy Your License
+            href: https://nebulix.unfolding.io/shop/starfunnel-license/
+            color: surface-primary
+      - title: Kickstart Your Project
+        intro: We help you install and customize your website
+        price: $999,-
+        features:
+          - label: Free for commercial use
+            icon: /src/icons/check-o.svg
+            icon_class: text-success
+          - label: Basic support
+            icon: /src/icons/check-o.svg
+            value: GitHub
+            icon_class: text-success
+          - label: Remove attribution
+            icon: /src/icons/check-o.svg
+            icon_class: text-success
+          - label: Premium Support
+            icon: /src/icons/check-o.svg
+            icon_class: text-success
+            value: 10h
+        price_sufix: from
+        price_suffix: from
+        surface: surface-secondary
+        buttons:
+          - icon_only: false
+            label: More info
+            href: /kickstart-your-project
+            color: surface-secondary
 
 
-      Unlock higher conversions with StarFunnel! We know the equation: Page Speed equals Conversion. Our focus is simple – speedy lead harvesting for a stellar customer experience. Fast site, happy customers, and effortless conversions – that's StarFunnel
-  - type: text_media
-    component: TextMedia
-    style:
-      container: lg
-      template: column
-      reverse: false
-      animate: false
-      block_class: pb-14
-      image_opacity: ""
-    media:
-      image_size: "66"
-      title: Image
-      aspect: 1.777
-      thumbnail: /src/assets/ImageInitialVideo.jpg
-      embed: youtube
-      image_opacity: ""
-    content: >
-      ## **Green & Lean** StarFunnel's Small & Speedy Solution for a Greener
-      Web!
-
-
-      Embrace sustainability with StarFunnel! Our smaller, faster site not only means quicker conversions but also a lighter environmental footprint. StarFunnel consumes up to 90% less CO2 than a typical WordPress website, averaging just 0.06g CO2 per view. Join us in making the web greener, one swift and eco-friendly click at a time!
   - type: recentitems
     component: RecentItems
     page_type: blog
@@ -199,10 +204,9 @@ blocks:
       surface: surface-dark
     post_tag:
       - Docs
-    title: Check out our documentation
+    title: Descubre los numerosos beneficios que ofrece Clickmi
     content: >
-      Getting started is easy, just clone the repo, configure and you are ready
-      to go.
+      Elije y empieza desde ya.
   - type: faq
     component: Faq
     title: FAQ's
@@ -258,55 +262,8 @@ blocks:
           You'll need to implement your authentication system or integrate with
           a third-party authentication service to enable user accounts and
           redirects.
-  - type: popup
-    component: AnnoyingPopup
-    timing:
-      delay: 1
-      duration: 7
-      on_load: false
-    content: |
-      ## Need help with kickstarting your project!
 
-      Get in touch with us and we will help you get started, now with 20% off.
-    code: GET-HELP-NOW
-    style:
-      surface: surface-dark
-    media:
-      thumbnail: /src/assets/popups.jpeg
-      image_opacity: "0.3"
-    buttons:
-      - icon_only: false
-        label: More info
-        href: /kickstart-your-project
-    link: annoying-popup
-  - type: text_media
-    component: TextMedia
-    style:
-      container: none
-      template: banner
-      reverse: true
-      animate: true
-      block_class: my-0
-      image_opacity: ""
-    content: >
-      ## Anoying Popups
-
-
-      Add popups on page load or scroll location, you can set a delay and even duration!
-    media:
-      thumbnail: /src/assets/popups.jpeg
-      aspect: ""
-      image_size: ""
-      title: Image
-      embed: youtube
-      image_opacity: "0.5"
-    buttons:
-      - icon_only: false
-        label: Open Popup
-        href: "#annoying-popup"
-        icon: /src/icons/shop.svg
-        color: surface-primary
-    block_class: py-20 text-center
+  
 og_image: /src/assets/og_image_starfunnel.jpg
 media_folder: src/assets
 public_folder: ""

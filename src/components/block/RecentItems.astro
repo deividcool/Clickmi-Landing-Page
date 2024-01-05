@@ -28,11 +28,11 @@ if (count && count > 0) posts = posts.slice(0, count);
 const sizes = getGridImageSizes("lg");
 ---
 
-<div class={`recent-blogs grid gap-8 fade-up container-lg `}>
+<div class={`recent-blogs grid gap-8 fade-up container-lg`}>
   <div class="grid gap-14 lg:grid-cols-3">
     <div>
       <div class="sticky top-14 grid gap-4">
-        <h2 class="title-sm" id={slugify(title)}>
+        <h2 class="title-sm" id={slugify(title)} >
           {title}
         </h2>
         {content && <div class="richtext" set:html={marked.parse(content)} />}
@@ -65,6 +65,7 @@ const sizes = getGridImageSizes("lg");
             xml:space="preserve"
             style="enable-background: new 0 0 12 12"
             viewBox="0 0 12 12"
+            id="FAQ"
           >
             <g
               class="-translate-x-[20%] transition-transform duration-300 group-hover:translate-x-0"

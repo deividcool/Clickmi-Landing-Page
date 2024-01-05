@@ -39,7 +39,7 @@ const mediaClass = () => {
     >
       <div
         class={`parallax pointer-events-none absolute inset-0 bg-${
-          hero?.style?.background || ""
+         "" || ""
         }`}
       />
       {hero?.style?.pattern && (
@@ -96,7 +96,7 @@ const mediaClass = () => {
           <div class="mx-auto grid max-w-3xl gap-8 pt-20  md:pb-10 ">
             {hero?.title && (
               <h1 class="title" set:html={marked.parse(hero.title)} />
-            )}
+            )} 
             {hero.intro && (
               <div
                 class="balance text-lg"
@@ -177,7 +177,7 @@ const mediaClass = () => {
         </div>
       </div>
       <div class={`hero-funnel__divider z-0 -mb-px `}>
-        <span class="surface-base  -mb-px h-72 w-full shrink-0 md:-mb-20 md:h-40" />
+        <span class="surface-base  -mb-px h-72 w-full shrink-0 md:-mb-20 md:h-40"/>
         <div class="surface-base h-full w-full" />
       </div>
     </div>
@@ -188,6 +188,7 @@ const mediaClass = () => {
   width="0"
   height="0"
   viewBox="0 0 1200 220.2"
+  id="Caracteristica"
 >
   <defs>
     <clipPath
